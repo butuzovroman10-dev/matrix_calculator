@@ -39,9 +39,8 @@ int main() {
     print_matrix(E);
 
     // Тестируем индивидуальное задание - среднее значение матрицы
-    double total_sum = matrix_average(A);
-    std::cout << "\nSum of all elements in matrix A: " << total_sum
-              << std::endl;
+    double total_sum = matrix_sum(A);
+    std::cout << "\nSum of all elements in matrix A: " << total_sum << std::endl;
     // Освобождаем память (КАЖДУЮ МАТРИЦУ ТОЛЬКО ОДИН РАЗ!)
     free_matrix(A);
     free_matrix(B);
